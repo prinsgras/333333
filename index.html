@@ -3,15 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Google Drive Video Grid</title>
+  <title>Greazy</title>
   <style>
     body {
+      background-color: #f0f0f0;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff69b4, #add8e6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      margin-bottom: 0.3em;
+    }
+
+    p.address {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .video-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      padding: 10px;
-      background-color: #f0f0f0;
+      justify-content: center;
     }
+
     .video-wrapper {
       width: 320px;
       height: 180px;
@@ -19,6 +45,7 @@
       border: 2px solid #ccc;
       box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     }
+
     iframe {
       width: 100%;
       height: 100%;
@@ -28,22 +55,26 @@
 </head>
 <body>
 
-  <!-- List of Google Drive videos -->
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1ktYhmCQGLQ7qlN8P4LxAZu77VbNEWWt2/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kmL7haVPpbS6FohgTkQEUrH_fUI4gWen/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l9EwhEKy9mlrQmweqIbf3v_XUBIanMYp/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kv3XyVPTuPqzGNt9xKamKkQGI2ZEjSvq/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kxYMqTkawx2qJS9b2hAjHVg4s1fKerat/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lPCbZ6pWaEUn0VqyNHhI3_dmelnSEzlS/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lIzGdCmjpW1ChCmMP1TS23aE9NPHYMUL/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1krkk6hhm70XJKcbxdavDVNKRTV71opKP/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l5qRVevnsZMBFT6WNdSq7eqshAmAE9Hs/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kQKcTaP_2v2lzVwZuKFsSSW-hKNQDIM_/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kSrVuzTvK5kmgjB8gLM0QSq4r2YhVqpf/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lR6wmqzKyvSK99snWa8lqQ6F66OUs6op/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kiWJlDzZfFjz5RniJXZeCvZbkaEtgI5S/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kTMzX0u5cHPpsEXTFqY1KflvOnbPg8C2/preview" allow="autoplay"></iframe></div>
-  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kaZclGJI176UruObdNt4gvFwNDssUH2g/preview" allow="autoplay"></iframe></div>
+  <h1>Greazy</h1>
+  <p class="address">Overtoom 344, 1054JG Amsterdam, Netherlands</p>
+
+  <div class="video-grid">
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1ktYhmCQGLQ7qlN8P4LxAZu77VbNEWWt2/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kmL7haVPpbS6FohgTkQEUrH_fUI4gWen/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l9EwhEKy9mlrQmweqIbf3v_XUBIanMYp/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kv3XyVPTuPqzGNt9xKamKkQGI2ZEjSvq/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kxYMqTkawx2qJS9b2hAjHVg4s1fKerat/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lPCbZ6pWaEUn0VqyNHhI3_dmelnSEzlS/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lIzGdCmjpW1ChCmMP1TS23aE9NPHYMUL/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1krkk6hhm70XJKcbxdavDVNKRTV71opKP/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l5qRVevnsZMBFT6WNdSq7eqshAmAE9Hs/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kQKcTaP_2v2lzVwZuKFsSSW-hKNQDIM_/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kSrVuzTvK5kmgjB8gLM0QSq4r2YhVqpf/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lR6wmqzKyvSK99snWa8lqQ6F66OUs6op/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kiWJlDzZfFjz5RniJXZeCvZbkaEtgI5S/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kTMzX0u5cHPpsEXTFqY1KflvOnbPg8C2/preview" allow="autoplay"></iframe></div>
+    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kaZclGJI176UruObdNt4gvFwNDssUH2g/preview" allow="autoplay"></iframe></div>
+  </div>
 
 </body>
 </html>
