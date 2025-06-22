@@ -3,44 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>To Jessy James</title>
+  <title>Google Drive Video Grid</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
       background-color: #f0f0f0;
     }
-    input, button {
-      padding: 10px;
-      font-size: 1rem;
+    .video-wrapper {
+      width: 320px;
+      height: 180px;
+      background: #000;
+      border: 2px solid #ccc;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     }
     iframe {
-      margin-top: 20px;
       width: 100%;
-      height: 480px;
+      height: 100%;
       border: none;
     }
   </style>
 </head>
 <body>
 
-  <h1>Enter a Video Link</h1>
-  <input type="text" id="videoLink" placeholder="Paste video URL here">
-  <button onclick="loadVideo()">Play Video</button>
-
-  <iframe id="videoFrame" style="display:none;"></iframe>
-
-  <script>
-    function loadVideo() {
-      const link = document.getElementById('videoLink').value;
-      const frame = document.getElementById('videoFrame');
-      if (link.trim()) {
-        frame.src = link;
-        frame.style.display = 'block';
-        document.title = "To Jessy James";
-      }
-    }
-  </script>
+  <!-- List of Google Drive videos -->
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1ktYhmCQGLQ7qlN8P4LxAZu77VbNEWWt2/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kmL7haVPpbS6FohgTkQEUrH_fUI4gWen/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l9EwhEKy9mlrQmweqIbf3v_XUBIanMYp/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kv3XyVPTuPqzGNt9xKamKkQGI2ZEjSvq/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kxYMqTkawx2qJS9b2hAjHVg4s1fKerat/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lPCbZ6pWaEUn0VqyNHhI3_dmelnSEzlS/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lIzGdCmjpW1ChCmMP1TS23aE9NPHYMUL/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1krkk6hhm70XJKcbxdavDVNKRTV71opKP/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l5qRVevnsZMBFT6WNdSq7eqshAmAE9Hs/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kQKcTaP_2v2lzVwZuKFsSSW-hKNQDIM_/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kSrVuzTvK5kmgjB8gLM0QSq4r2YhVqpf/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lR6wmqzKyvSK99snWa8lqQ6F66OUs6op/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kiWJlDzZfFjz5RniJXZeCvZbkaEtgI5S/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kTMzX0u5cHPpsEXTFqY1KflvOnbPg8C2/preview" allow="autoplay"></iframe></div>
+  <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kaZclGJI176UruObdNt4gvFwNDssUH2g/preview" allow="autoplay"></iframe></div>
 
 </body>
 </html>
