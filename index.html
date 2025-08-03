@@ -5,42 +5,118 @@
   <title>Superkids Voetbalfeestje</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { margin:0; font-family:'Segoe UI', sans-serif; background:#f4f4f4; color:#333; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
     header {
       background: linear-gradient(135deg, #ff9800, #e91e63, #03a9f4);
       background-size: 600% 600%;
       animation: gradient 15s ease infinite;
-      color:#fff; text-align:center; padding:80px 20px;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
     }
+
     @keyframes gradient {
-      0% {background-position:0% 50%;}
-      50% {background-position:100% 50%;}
-      100% {background-position:0% 50%;}
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    header h1 { font-size:48px; margin:0; text-shadow:2px 2px 5px rgba(0,0,0,0.4); }
-    header p { font-size:22px; margin-top:15px; text-shadow:1px 1px 3px rgba(0,0,0,0.3); }
-    section { max-width:1000px; margin:auto; padding:40px 20px; }
-    h2 { font-size:32px; margin-bottom:20px; text-align:center; color:#ff9800; }
-    ul { padding-left:20px; margin-bottom:30px; }
-    li { margin-bottom:10px; }
-    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    header p {
+      font-size: 22px;
+      margin-top: 15px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #ff9800;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
     .gallery img {
-      width:180px; height:120px; object-fit:cover; border-radius:8px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.2); transition:transform 0.2s;
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
     }
-    .gallery img:hover { transform:scale(1.05); }
-    .whatsapp-btn { display:flex; justify-content:center; margin:50px 0 0; }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .whatsapp-btn {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0 0;
+    }
+
     .whatsapp-btn a {
-      background:#25D366; color:#fff; text-decoration:none;
-      padding:14px 28px; border-radius:30px; font-size:18px; font-weight:bold;
-      display:inline-flex; align-items:center; gap:10px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
-    .whatsapp-btn img { width:24px; height:24px; }
-    footer { background:#222; color:#fff; text-align:center; padding:20px 0; }
+
+    .whatsapp-btn img {
+      width: 24px;
+      height: 24px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>⚽️ Superkids Voetbalfeestje!</h1>
     <p>Bewegen, lachen & scoren — een actief feestje voor iedereen!</p>
@@ -72,23 +148,25 @@
   <section>
     <h2>📸 Impressie van het feestje</h2>
     <div class="gallery">
-      <img src="https://stock.adobe.com/it/images/girl-soccer-and-team-portrait-smile-on-grass-together-in-sports-field-for-kids-game-in-the-outdoors-happy-female-children-smiling-in-fun-teamwork-success-for-football-sport-fitness-and-exercise/535856308" alt="Team kids soccer" />
-      <img src="https://stock.adobe.com/images/school-holidays-group-of-happy-children-playing-football-outdoors/356544987" alt="Kids playing football" />
-      <img src="https://alimy.com/stock-photo-two-happy-children-playing-european-football-outdoors-in-school-yard-91577860.html" alt="Happy children football" />
-      <img src="https://stock.adobe.com/images/two-happy-children-playing-european-football-outdoors-in-school-yard-kids-play-soccer-active-sport-for-preschool-child-ball-game-for-young-kid-team-boy-and-girl-score-a-goal-in-football-match/114005894" alt="Kids soccer outdoor" />
-      <!-- herhaal tot 15 afbeeldingen -->
+      <img src="https://images.unsplash.com/photo-1599059812555-fdbfc0c01335?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Kinderen spelen voetbal">
+      <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Team kinderen sport">
+      <img src="https://images.unsplash.com/photo-1549921296-3b4a6dcaa8a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Blije kinderen buiten">
+      <img src="https://images.unsplash.com/photo-1603993097397-89d87a63f2a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Voetballende kinderen">
+      <img src="https://images.unsplash.com/photo-1538122362785-6e221a6abf2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Spelers warming-up">
+      <img src="https://images.unsplash.com/photo-1616105518074-d299c6a1777d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Kinderen met voetbal">
     </div>
   </section>
 
   <div class="whatsapp-btn">
     <a href="https://wa.me/31610133270" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo"/>
-      WhatsApp ons: +31 6 10133270
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo">
+      WhatsApp ons: +31 6 10133270
     </a>
   </div>
 
   <footer>
     <p>&copy; 2025 Superkids. Alle rechten voorbehouden.</p>
   </footer>
+
 </body>
 </html>
