@@ -2,16 +2,13 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5; url=https://superkids.nl/jachtseizoen/">
+    <title>Superkids Jachtseizoen Foto's</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superkids Jachtseizoen</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
+            background-color: #f4f4f4;
             color: #333;
         }
 
@@ -22,41 +19,30 @@
             text-align: center;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .hero {
-            background-color: #fff;
-            padding: 40px 20px;
+        h2 {
             text-align: center;
+            margin-top: 40px;
         }
 
-        .details, .cta {
-            background-color: #eaeaea;
-            padding: 30px 20px;
-            margin: 20px auto;
-            max-width: 800px;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
 
-        .cta .button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #f90;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -64,46 +50,54 @@
             color: white;
             text-align: center;
             padding: 15px 0;
-            margin-top: 30px;
+            margin-top: 40px;
+        }
+
+        .category {
+            margin-bottom: 60px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Superkids Jachtseizoen</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Over Superkids</a></li>
-                <li><a href="#">Jachtseizoen</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Superkids Jachtseizoen Foto's</h1>
+        <p>Bekijk de hoogtepunten van het Jachtseizoen!</p>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Je wordt doorgestuurd naar het nieuwe Superkids Jachtseizoen</h2>
-            <p>Als de pagina niet automatisch laadt, klik dan <a href="https://superkids.nl/jachtseizoen/">hier</a>.</p>
-        </section>
+    <!-- Held van de Dag -->
+    <section class="category">
+        <h2>Held van de Dag</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1011/600/400" alt="Held 1">
+            <img src="https://picsum.photos/id/1012/600/400" alt="Held 2">
+            <img src="https://picsum.photos/id/1013/600/400" alt="Held 3">
+        </div>
+    </section>
 
-        <section class="details">
-            <h3>Wat is het Jachtseizoen?</h3>
-            <p>
-                Het Jachtseizoen van Superkids is gebaseerd op het populaire spel waarbij een team een voortvluchtige probeert te vangen binnen een bepaalde tijd.
-                Je krijgt een GPS-tracker en moet ontsnappen van de jagers die jou proberen op te sporen.
-            </p>
-        </section>
+    <!-- Jachtmomenten -->
+    <section class="category">
+        <h2>Jachtmomenten</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1021/600/400" alt="Moment 1">
+            <img src="https://picsum.photos/id/1022/600/400" alt="Moment 2">
+            <img src="https://picsum.photos/id/1023/600/400" alt="Moment 3">
+        </div>
+    </section>
 
-        <section class="cta">
-            <h3>Doe mee!</h3>
-            <p>Durf jij het aan? Meld je nu aan voor het volgende Superkids Jachtseizoen!</p>
-            <a href="https://superkids.nl/jachtseizoen/" class="button">Aanmelden</a>
-        </section>
-    </main>
+    <!-- Groepsfoto's -->
+    <section class="category">
+        <h2>Groepsfoto's</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1031/600/400" alt="Groep 1">
+            <img src="https://picsum.photos/id/1032/600/400" alt="Groep 2">
+            <img src="https://picsum.photos/id/1033/600/400" alt="Groep 3">
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Superkids. Alle rechten voorbehouden.</p>
     </footer>
+
 </body>
 </html>
