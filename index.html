@@ -1,172 +1,209 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Superkids Voetbalfeestje</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Superkiddo's Kinderfeestjes - Foto Impressie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
       color: #333;
     }
-
     header {
       background: linear-gradient(135deg, #ff9800, #e91e63, #03a9f4);
-      background-size: 600% 600%;
-      animation: gradient 15s ease infinite;
       color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-    }
-
-    header p {
-      font-size: 22px;
-      margin-top: 15px;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
       padding: 40px 20px;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
       text-align: center;
-      color: #ff9800;
     }
-
-    ul {
-      padding-left: 20px;
-      margin-bottom: 30px;
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
-
-    li {
-      margin-bottom: 10px;
+    .whatsapp-contact {
+      margin-top: 15px;
     }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 180px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .whatsapp-btn {
-      display: flex;
-      justify-content: center;
-      margin: 50px 0 0;
-    }
-
-    .whatsapp-btn a {
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-size: 18px;
-      font-weight: bold;
+    .whatsapp-contact a {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
     }
-
-    .whatsapp-btn img {
-      width: 24px;
-      height: 24px;
+    .whatsapp-contact a:hover {
+      background-color: #1ebe57;
     }
-
+    .whatsapp-contact img {
+      width: 28px;
+      height: 28px;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    figure {
+      margin: 0;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    figure img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+    figcaption {
+      padding: 12px 15px;
+      font-size: 14px;
+      color: #555;
+      flex-grow: 1;
+      background-color: #fafafa;
+      text-align: center;
+      line-height: 1.3;
+    }
+    section.lasergame-info {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    section.lasergame-info h2 {
+      color: #ff9800;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    section.lasergame-info p,
+    section.lasergame-info ul {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    section.lasergame-info ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    section.lasergame-info ul li::before {
+      content: '✅ ';
+    }
     footer {
+      text-align: center;
+      padding: 20px 10px;
       background-color: #222;
       color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 28px;
+      }
+      .whatsapp-contact a {
+        font-size: 16px;
+        padding: 10px 18px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>⚽️ Superkids Voetbalfeestje!</h1>
-    <p>Bewegen, lachen & scoren — een actief feestje voor iedereen!</p>
-  </header>
-
-  <section>
-    <h2>👧👦 Voor wie is het?</h2>
-    <ul>
-      <li>✅ Geschikt voor kinderen vanaf 6 jaar</li>
-      <li>✅ Leuk voor fanatieke voetballers én beginners</li>
-      <li>✅ Te organiseren op al onze locaties</li>
-    </ul>
-
-    <h2>🏃 Wat kun je verwachten?</h2>
-    <ul>
-      <li>🎯 <strong>3 op een rij</strong>: estafette met bal als warming‑up</li>
-      <li>🏃 <strong>Ballenrace</strong>: spannende afvalrace tot de laatste speler overblijft</li>
-      <li>🎲 <strong>Dobbelstenen‑wedstrijd</strong>: creatieve partijen met wisselende teams</li>
-      <li>⚡ <strong>Bliksemtoernooi</strong>: kies je EK‑favoriet en speel een snel, intens toernooi</li>
-      <li>🏆 <strong>Champions League‑finale</strong>: het hoogtepunt voor dé pro‑ervaring</li>
-    </ul>
-
-    <h2>🎉 Mix & match</h2>
-    <p>
-      Combineer dit voetbalfeest met andere spannende spellen! Na het voetbaldeel bijvoorbeeld lasergame, levend stratego of het Jachtseizoen.
-    </p>
-  </section>
-
-  <section>
-    <h2>📸 Impressie van het feestje</h2>
-    <div class="gallery">
-      <img src="https://images.pexels.com/photos/1231245/pexels-photo-1231245.jpeg" alt="Kinderen spelen voetbal op grasveld">
-      <img src="https://images.pexels.com/photos/58913/pexels-photo-58913.jpeg" alt="Kinderen voetballen in het park">
-      <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg" alt="Kind lacht terwijl hij voetbalt">
-      <img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg" alt="Voetballende jongens op veld">
-      <img src="https://images.pexels.com/photos/3660206/pexels-photo-3660206.jpeg" alt="Kinderen sporten buiten met plezier">
-      <img src="https://images.pexels.com/photos/1149024/pexels-photo-1149024.jpeg" alt="Team kinderen tijdens sportactiviteit">
-    </div>
-  </section>
-
-  <div class="whatsapp-btn">
-    <a href="https://wa.me/31610133270" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo">
+<header>
+  <h1>🎉 Superkiddo’s Kinderfeestjes - Foto Impressie</h1>
+  <div class="whatsapp-contact">
+    <a href="https://wa.me/31610133270" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo" />
       WhatsApp ons: +31 6 10133270
     </a>
   </div>
+</header>
 
-  <footer>
-    <p>&copy; 2025 Superkids. Alle rechten voorbehouden.</p>
-  </footer>
+<main>
 
-</body>
-</html>
+  <section class="gallery">
+    <figure>
+      <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg" alt="Kinderen spelen voetbal op een grasveld" />
+      <figcaption>Kinderen spelen voetbal op een grasveld.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/109919/pexels-photo-109919.jpeg" alt="Kind rent met voetbal op sportveld" />
+      <figcaption>Kind rent met voetbal op sportveld.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg" alt="Kinderen geven elkaar high five na voetbalwedstrijd" />
+      <figcaption>Kinderen geven elkaar high five na voetbalwedstrijd.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/372484/pexels-photo-372484.jpeg" alt="Kind verstopt zich achter obstakel tijdens lasergame" />
+      <figcaption>Kind verstopt zich achter obstakel tijdens lasergame.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg" alt="Kinderen lachen tijdens buiten spelen" />
+      <figcaption>Kinderen lachen tijdens buiten spelen.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg" alt="Voetballende jongens op veld" />
+      <figcaption>Voetballende jongens op veld.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/207924/pexels-photo-207924.jpeg" alt="Kind schiet voetbal tijdens training" />
+      <figcaption>Kind schiet voetbal tijdens training.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/315555/pexels-photo-315555.jpeg" alt="Kind in actie tijdens lasergame" />
+      <figcaption>Kind in actie tijdens lasergame.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/1661470/pexels-photo-1661470.jpeg" alt="Kinderen spelen samen voetbal" />
+      <figcaption>Kinderen spelen samen voetbal.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.pexels.com/photos/210241/pexels-photo-210241.jpeg" alt="Kind kijkt geconcentreerd tijdens spel" />
+      <figcaption>Kind kijkt geconcentreerd tijdens spel.</figcaption>
+    </figure>
+  </section>
+
+  <section class="lasergame-info">
+    <h2>🎉 Vier een onvergetelijk Lasergame Kinderfeestje!</h2>
+    <p>Op zoek naar een knalfeest voor de jarige Job? Bij ons lasergame kinderfeestje draait alles om plezier, actie én avontuur – speciaal afgestemd op kinderen van 6 t/m 12 jaar!</p>
+
+    <h3>🧑‍🏫 Volledige begeleiding</h3>
+    <p>Een enthousiaste, ervaren trainer zorgt voor de begeleiding van begin tot eind. Ouders kunnen achterover leunen – wij regelen alles!</p>
+
+    <h3>👧👦 Voor wie is het?</h3>
+    <ul>
+      <li>Kinderen tussen de 6 en 12 jaar oud</li>
+      <li>Voor elk kind, ongeacht ervaring of niveau</li>
+      <li>Te spelen op al onze locaties</li>
+    </ul>
+
+    <h3>🔫 Het spelconcept</h3>
+    <p>Tijdens het feestje krijgen de kinderen hun eigen lasergun en starten ze met 9 levens. Ze duiken in originele spelvormen vol spanning en samenwerking – dit is veel meer dan standaard lasergamen!</p>
+
+    <h3>🎮 Welke spellen spelen we?</h3>
+    <ul>
+      <li>Strikezone</li>
+      <li>Last Man Standing</li>
+      <li>Capture the Flag</li>
+      <li>The Hunting Game</li>
+    </ul>
+
+    <p>Elke game is spannend,
