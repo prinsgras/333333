@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Superkids Jachtseizoen Foto's</title>
+    <title>Superkids Jachtseizoen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -19,9 +19,28 @@
             text-align: center;
         }
 
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         h2 {
             text-align: center;
             margin-top: 40px;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
         }
 
         .gallery {
@@ -29,7 +48,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            padding: 20px;
+            padding: 20px 0;
         }
 
         .gallery img {
@@ -45,11 +64,15 @@
             transform: scale(1.05);
         }
 
+        ul {
+            padding-left: 20px;
+        }
+
         footer {
             background-color: #222;
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 20px 0;
             margin-top: 40px;
         }
 
@@ -61,38 +84,89 @@
 <body>
 
     <header>
-        <h1>Superkids Jachtseizoen Foto's</h1>
-        <p>Bekijk de hoogtepunten van het Jachtseizoen!</p>
+        <h1>Superkids Jachtseizoen</h1>
+        <p>Het spannendste kinderspel van Nederland!</p>
     </header>
 
-    <!-- Held van de Dag -->
-    <section class="category">
-        <h2>Held van de Dag</h2>
-        <div class="gallery">
-            <img src="https://picsum.photos/id/1011/600/400" alt="Held 1">
-            <img src="https://picsum.photos/id/1012/600/400" alt="Held 2">
-            <img src="https://picsum.photos/id/1013/600/400" alt="Held 3">
+    <nav>
+        <a href="#wat">Wat is het?</a>
+        <a href="#opties">Opties</a>
+        <a href="#fotos">Foto's</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="section" id="wat">
+        <h2>Wat is het Superkids Jachtseizoen?</h2>
+        <p>
+            In het Jachtseizoen gaan kinderen de strijd aan in een spannend achtervolgingsspel. Eén team gaat op de vlucht, het andere team is de jager.
+            Net als in het bekende YouTube-programma gebruiken we regels zoals:
+        </p>
+        <ul>
+            <li>De voortvluchtigen mogen zich verplaatsen binnen een vastgesteld gebied</li>
+            <li>Elke 10 minuten wordt hun locatie gedeeld met de jagers</li>
+            <li>Wie gepakt wordt is af</li>
+            <li>Het team dat weet te ontsnappen wint!</li>
+        </ul>
+        <p>
+            Dit is niet alleen super spannend, maar ook goed voor samenwerken, bewegen en logisch denken.
+        </p>
+    </section>
+
+    <section class="section" id="opties">
+        <h2>Opties voor kinderen</h2>
+        <p>
+            Superkids biedt verschillende versies van het Jachtseizoen, afgestemd op leeftijd en niveau:
+        </p>
+        <ul>
+            <li><strong>Basisschool-editie</strong> (leeftijd 7-12): begeleid door ervaren spelleiders</li>
+            <li><strong>Jongeren-editie</strong> (leeftijd 13-17): uitgebreid met teamopdrachten en strategie</li>
+            <li><strong>Familie-editie</strong>: kinderen samen met ouders, ideaal voor evenementen of buurtfeesten</li>
+        </ul>
+        <p>
+            We gebruiken GPS-trackers, walkietalkies, spelkaarten en soms zelfs verkleedkleding om het nog leuker te maken!
+        </p>
+    </section>
+
+    <section class="section" id="fotos">
+        <h2>Foto's van het Superkids Jachtseizoen</h2>
+
+        <!-- Held van de Dag -->
+        <div class="category">
+            <h3>Held van de Dag</h3>
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1011/600/400" alt="Held 1">
+                <img src="https://picsum.photos/id/1012/600/400" alt="Held 2">
+                <img src="https://picsum.photos/id/1013/600/400" alt="Held 3">
+            </div>
+        </div>
+
+        <!-- Jachtmomenten -->
+        <div class="category">
+            <h3>Jachtmomenten</h3>
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1021/600/400" alt="Moment 1">
+                <img src="https://picsum.photos/id/1022/600/400" alt="Moment 2">
+                <img src="https://picsum.photos/id/1023/600/400" alt="Moment 3">
+            </div>
+        </div>
+
+        <!-- Groepsfoto's -->
+        <div class="category">
+            <h3>Groepsfoto's</h3>
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1031/600/400" alt="Groep 1">
+                <img src="https://picsum.photos/id/1032/600/400" alt="Groep 2">
+                <img src="https://picsum.photos/id/1033/600/400" alt="Groep 3">
+            </div>
         </div>
     </section>
 
-    <!-- Jachtmomenten -->
-    <section class="category">
-        <h2>Jachtmomenten</h2>
-        <div class="gallery">
-            <img src="https://picsum.photos/id/1021/600/400" alt="Moment 1">
-            <img src="https://picsum.photos/id/1022/600/400" alt="Moment 2">
-            <img src="https://picsum.photos/id/1023/600/400" alt="Moment 3">
-        </div>
-    </section>
-
-    <!-- Groepsfoto's -->
-    <section class="category">
-        <h2>Groepsfoto's</h2>
-        <div class="gallery">
-            <img src="https://picsum.photos/id/1031/600/400" alt="Groep 1">
-            <img src="https://picsum.photos/id/1032/600/400" alt="Groep 2">
-            <img src="https://picsum.photos/id/1033/600/400" alt="Groep 3">
-        </div>
+    <section class="section" id="contact">
+        <h2>Meer weten of boeken?</h2>
+        <p>
+            Wil je het Superkids Jachtseizoen boeken voor jouw school, kinderfeest of evenement?
+            Neem contact met ons op via <strong>info@superkids.nl</strong> of bezoek onze hoofdpagina.
+        </p>
     </section>
 
     <footer>
