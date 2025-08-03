@@ -1,151 +1,184 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Superkids Voetbalfeestje</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <title>Superkids Voetbalfeestje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-        header {
-            background-image: url('https://images.unsplash.com/photo-1571019613914-85f342c1d64d?auto=format&fit=crop&w=1500&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    header {
+      background: linear-gradient(135deg, #f90, #ff4081, #03a9f4);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      background-size: 600% 600%;
+      animation: gradient 15s ease infinite;
+    }
 
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-            text-shadow: 2px 2px 5px #000;
-        }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
 
-        header p {
-            font-size: 22px;
-            margin-top: 15px;
-            text-shadow: 1px 1px 3px #000;
-        }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+    header p {
+      font-size: 22px;
+      margin-top: 15px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
 
-        h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #f90;
-        }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-        ul {
-            padding-left: 20px;
-            margin-bottom: 30px;
-        }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #f90;
+    }
 
-        li {
-            margin-bottom: 10px;
-        }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
 
-        .emoji {
-            font-size: 22px;
-        }
+    li {
+      margin-bottom: 10px;
+    }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
 
-        .gallery img {
-            width: 180px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s;
-        }
+    .gallery img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
 
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
 
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
+    .whatsapp-btn {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0 0;
+    }
+
+    .whatsapp-btn a {
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-btn img {
+      width: 24px;
+      height: 24px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>⚽️ Superkids Voetbalfeestje!</h1>
-        <p>Bewegen, lachen & scoren — een actief feestje voor iedereen!</p>
-    </header>
+  <header>
+    <h1>⚽️ Superkids Voetbalfeestje!</h1>
+    <p>Bewegen, lachen & scoren — een actief feestje voor iedereen!</p>
+  </header>
 
-    <section>
-        <h2 class="emoji">👧👦 Voor wie is het?</h2>
-        <ul>
-            <li>✅ Geschikt voor kinderen vanaf 6 jaar</li>
-            <li>✅ Zowel leuk voor fanatieke voetballers als voor kinderen zonder ervaring</li>
-            <li>✅ Te organiseren op al onze locaties</li>
-        </ul>
+  <section>
+    <h2>👧👦 Voor wie is het?</h2>
+    <ul>
+      <li>✅ Geschikt voor kinderen vanaf 6 jaar</li>
+      <li>✅ Zowel leuk voor fanatieke voetballers als voor kinderen zonder ervaring</li>
+      <li>✅ Te organiseren op al onze locaties</li>
+    </ul>
 
-        <h2 class="emoji">🏃 Wat kun je verwachten?</h2>
-        <p>
-            Onder begeleiding van een super enthousiaste trainer spelen we originele en afwisselende spellen. Denk aan:
-        </p>
-        <ul>
-            <li>🎯 <strong>3 op een rij</strong>: een estafettespel met de bal om lekker op te warmen</li>
-            <li>🏃 <strong>Ballenrace</strong>: blijf als laatste over in deze spannende afvalrace</li>
-            <li>🎲 <strong>Dobbelstenen-wedstrijd</strong>: creatieve partijtjes zoals 1-tegen-1 of 3-tegen-3 waarbij je razendsnel moet schakelen</li>
-            <li>⚡ <strong>Bliksemtoernooi</strong>: kies je favoriete EK-speler en strijd mee in dit korte, felle toernooi</li>
-            <li>🏆 <strong>Champions League-finale</strong>: het absolute hoogtepunt waarbij de kinderen zich echte profs voelen!</li>
-        </ul>
+    <h2>🏃 Wat kun je verwachten?</h2>
+    <p>
+      Onder begeleiding van een super enthousiaste trainer spelen we originele en afwisselende spellen. Denk aan:
+    </p>
+    <ul>
+      <li>🎯 <strong>3 op een rij</strong>: een estafettespel met de bal om lekker op te warmen</li>
+      <li>🏃 <strong>Ballenrace</strong>: blijf als laatste over in deze spannende afvalrace</li>
+      <li>🎲 <strong>Dobbelstenen-wedstrijd</strong>: creatieve partijtjes zoals 1-tegen-1 of 3-tegen-3 waarbij je razendsnel moet schakelen</li>
+      <li>⚡ <strong>Bliksemtoernooi</strong>: kies je favoriete EK-speler en strijd mee in dit korte, felle toernooi</li>
+      <li>🏆 <strong>Champions League-finale</strong>: het absolute hoogtepunt waarbij de kinderen zich echte profs voelen!</li>
+    </ul>
 
-        <h2 class="emoji">🎉 Mix & match</h2>
-        <p>
-            Wil je nóg meer actie? Combineer dit voetbalfeestje gerust met een van onze andere buitenspellen.
-            Het tweede deel van het feestje vullen we dan in met een andere activiteit, zoals lasergamen, levend stratego of het bekende Superkids Jachtseizoen!
-        </p>
-    </section>
+    <h2>🎉 Mix & match</h2>
+    <p>
+      Wil je nóg meer actie? Combineer dit voetbalfeestje gerust met een van onze andere buitenspellen.
+      Het tweede deel van het feestje vullen we dan in met een andere activiteit, zoals lasergamen, levend stratego of het bekende Superkids Jachtseizoen!
+    </p>
+  </section>
 
-    <section>
-        <h2>📸 Impressie van het feestje</h2>
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1603993097397-89d87a63f2a3?auto=format&fit=crop&w=600&q=80" alt="Kinderen voetballen">
-            <img src="https://images.unsplash.com/photo-1579972829074-681f8cbd7e17?auto=format&fit=crop&w=600&q=80" alt="Kinderen in actie">
-            <img src="https://images.unsplash.com/photo-1584466977773-4eaaaf8b8d12?auto=format&fit=crop&w=600&q=80" alt="Voetbalfeest">
-            <img src="https://images.unsplash.com/photo-1576575312048-d9ddf3e8bbfb?auto=format&fit=crop&w=600&q=80" alt="Bliksemtoernooi">
-            <img src="https://images.unsplash.com/photo-1621361454102-bdd14548a2d1?auto=format&fit=crop&w=600&q=80" alt="Trainer coacht">
-            <img src="https://images.unsplash.com/photo-1608848461950-b7691eabb91d?auto=format&fit=crop&w=600&q=80" alt="Lachende kinderen">
-            <img src="https://images.unsplash.com/photo-1549921296-3b4a6dcaa8a4?auto=format&fit=crop&w=600&q=80" alt="Lasergame kids">
-            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="Estafette race">
-            <img src="https://images.unsplash.com/photo-1620049622875-437f49b4d1e6?auto=format&fit=crop&w=600&q=80" alt="Kind met voetbal">
-            <img src="https://images.unsplash.com/photo-1623614206106-7dcdf799c55a?auto=format&fit=crop&w=600&q=80" alt="Feest met kids">
-            <img src="https://images.unsplash.com/photo-1581622554966-2b3ce95f79c3?auto=format&fit=crop&w=600&q=80" alt="Buiten spelende kinderen">
-            <img src="https://images.unsplash.com/photo-1584467735871-d1c3ebd7d3ce?auto=format&fit=crop&w=600&q=80" alt="Champions finale">
-            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=80" alt="Lopende kids">
-            <img src="https://images.unsplash.com/photo-1600061458758-fcc5283a3f52?auto=format&fit=crop&w=600&q=80" alt="Voetbal actie">
-            <img src="https://images.unsplash.com/photo-1583226391409-d2a72a98f0ea?auto=format&fit=crop&w=600&q=80" alt="Teamfoto kids">
-        </div>
-    </section>
+  <section>
+    <h2>📸 Impressie van het feestje</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/?kids,football" alt="Voetballende kinderen">
+      <img src="https://source.unsplash.com/featured/?child,soccer" alt="Soccer kid">
+      <img src="https://source.unsplash.com/featured/?team,sports,kids" alt="Team sport">
+      <img src="https://source.unsplash.com/featured/?child,game,outdoor" alt="Spelende kinderen">
+      <img src="https://source.unsplash.com/featured/?football,children,match" alt="Wedstrijd kind">
+      <img src="https://source.unsplash.com/featured/?running,school,sports" alt="Rennende kids">
+      <img src="https://source.unsplash.com/featured/?laser,tag,kids" alt="Lasergame kids">
+      <img src="https://source.unsplash.com/featured/?kids,sports,smile" alt="Blije kinderen">
+      <img src="https://source.unsplash.com/featured/?soccer,training,kids" alt="Training">
+      <img src="https://source.unsplash.com/featured/?child,fun,field" alt="Spel op gras">
+      <img src="https://source.unsplash.com/featured/?celebration,kids,soccer" alt="Goal vieren">
+      <img src="https://source.unsplash.com/featured/?happy,kids,football" alt="Blije kinderen">
+      <img src="https://source.unsplash.com/featured/?football,fun,team" alt="Voetbal team">
+      <img src="https://source.unsplash.com/featured/?action,kids,sport" alt="Actie shot">
+      <img src="https://source.unsplash.com/featured/?field,soccer,child" alt="Buiten spelen">
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Superkids. Alle rechten voorbehouden. | info@superkids.nl</p>
-    </footer>
+  <div class="whatsapp-btn">
+    <a href="https://wa.me/31610133270" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      WhatsApp ons: +31 6 10133270
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Superkids. Alle rechten voorbehouden.</p>
+  </footer>
 
 </body>
 </html>
