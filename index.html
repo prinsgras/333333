@@ -2,70 +2,81 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Superkids Jachtseizoen</title>
+    <title>Superkids Voetbalfeestje</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: 'Segoe UI', sans-serif;
             background-color: #f4f4f4;
             color: #333;
         }
 
         header {
-            background-color: #f90;
+            background-image: url('https://images.unsplash.com/photo-1571019613914-85f342c1d64d?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 80px 20px;
         }
 
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
         }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
+        header p {
+            font-size: 22px;
+            margin-top: 15px;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
         }
 
         h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
             text-align: center;
-            margin-top: 40px;
+            color: #f90;
         }
 
-        .section {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 30px 20px;
+        ul {
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .emoji {
+            font-size: 22px;
         }
 
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            padding: 20px 0;
+            gap: 15px;
         }
 
         .gallery img {
-            width: 300px;
-            height: 200px;
+            width: 180px;
+            height: 120px;
             object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease-in-out;
+            transition: transform 0.2s;
         }
 
         .gallery img:hover {
             transform: scale(1.05);
-        }
-
-        ul {
-            padding-left: 20px;
         }
 
         footer {
@@ -75,102 +86,65 @@
             padding: 20px 0;
             margin-top: 40px;
         }
-
-        .category {
-            margin-bottom: 60px;
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Superkids Jachtseizoen</h1>
-        <p>Het spannendste kinderspel van Nederland!</p>
+        <h1>⚽️ Superkids Voetbalfeestje!</h1>
+        <p>Bewegen, lachen & scoren — een actief feestje voor iedereen!</p>
     </header>
 
-    <nav>
-        <a href="#wat">Wat is het?</a>
-        <a href="#opties">Opties</a>
-        <a href="#fotos">Foto's</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <section>
+        <h2 class="emoji">👧👦 Voor wie is het?</h2>
+        <ul>
+            <li>✅ Geschikt voor kinderen vanaf 6 jaar</li>
+            <li>✅ Zowel leuk voor fanatieke voetballers als voor kinderen zonder ervaring</li>
+            <li>✅ Te organiseren op al onze locaties</li>
+        </ul>
 
-    <section class="section" id="wat">
-        <h2>Wat is het Superkids Jachtseizoen?</h2>
+        <h2 class="emoji">🏃 Wat kun je verwachten?</h2>
         <p>
-            In het Jachtseizoen gaan kinderen de strijd aan in een spannend achtervolgingsspel. Eén team gaat op de vlucht, het andere team is de jager.
-            Net als in het bekende YouTube-programma gebruiken we regels zoals:
+            Onder begeleiding van een super enthousiaste trainer spelen we originele en afwisselende spellen. Denk aan:
         </p>
         <ul>
-            <li>De voortvluchtigen mogen zich verplaatsen binnen een vastgesteld gebied</li>
-            <li>Elke 10 minuten wordt hun locatie gedeeld met de jagers</li>
-            <li>Wie gepakt wordt is af</li>
-            <li>Het team dat weet te ontsnappen wint!</li>
+            <li>🎯 <strong>3 op een rij</strong>: een estafettespel met de bal om lekker op te warmen</li>
+            <li>🏃 <strong>Ballenrace</strong>: blijf als laatste over in deze spannende afvalrace</li>
+            <li>🎲 <strong>Dobbelstenen-wedstrijd</strong>: creatieve partijtjes zoals 1-tegen-1 of 3-tegen-3 waarbij je razendsnel moet schakelen</li>
+            <li>⚡ <strong>Bliksemtoernooi</strong>: kies je favoriete EK-speler en strijd mee in dit korte, felle toernooi</li>
+            <li>🏆 <strong>Champions League-finale</strong>: het absolute hoogtepunt waarbij de kinderen zich echte profs voelen!</li>
         </ul>
+
+        <h2 class="emoji">🎉 Mix & match</h2>
         <p>
-            Dit is niet alleen super spannend, maar ook goed voor samenwerken, bewegen en logisch denken.
+            Wil je nóg meer actie? Combineer dit voetbalfeestje gerust met een van onze andere buitenspellen.
+            Het tweede deel van het feestje vullen we dan in met een andere activiteit, zoals lasergamen, levend stratego of het bekende Superkids Jachtseizoen!
         </p>
     </section>
 
-    <section class="section" id="opties">
-        <h2>Opties voor kinderen</h2>
-        <p>
-            Superkids biedt verschillende versies van het Jachtseizoen, afgestemd op leeftijd en niveau:
-        </p>
-        <ul>
-            <li><strong>Basisschool-editie</strong> (leeftijd 7-12): begeleid door ervaren spelleiders</li>
-            <li><strong>Jongeren-editie</strong> (leeftijd 13-17): uitgebreid met teamopdrachten en strategie</li>
-            <li><strong>Familie-editie</strong>: kinderen samen met ouders, ideaal voor evenementen of buurtfeesten</li>
-        </ul>
-        <p>
-            We gebruiken GPS-trackers, walkietalkies, spelkaarten en soms zelfs verkleedkleding om het nog leuker te maken!
-        </p>
-    </section>
-
-    <section class="section" id="fotos">
-        <h2>Foto's van het Superkids Jachtseizoen</h2>
-
-        <!-- Held van de Dag -->
-        <div class="category">
-            <h3>Held van de Dag</h3>
-            <div class="gallery">
-                <img src="https://picsum.photos/id/1011/600/400" alt="Held 1">
-                <img src="https://picsum.photos/id/1012/600/400" alt="Held 2">
-                <img src="https://picsum.photos/id/1013/600/400" alt="Held 3">
-            </div>
+    <section>
+        <h2>📸 Impressie van het feestje</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1603993097397-89d87a63f2a3?auto=format&fit=crop&w=600&q=80" alt="Kinderen voetballen">
+            <img src="https://images.unsplash.com/photo-1579972829074-681f8cbd7e17?auto=format&fit=crop&w=600&q=80" alt="Kinderen in actie">
+            <img src="https://images.unsplash.com/photo-1584466977773-4eaaaf8b8d12?auto=format&fit=crop&w=600&q=80" alt="Voetbalfeest">
+            <img src="https://images.unsplash.com/photo-1576575312048-d9ddf3e8bbfb?auto=format&fit=crop&w=600&q=80" alt="Bliksemtoernooi">
+            <img src="https://images.unsplash.com/photo-1621361454102-bdd14548a2d1?auto=format&fit=crop&w=600&q=80" alt="Trainer coacht">
+            <img src="https://images.unsplash.com/photo-1608848461950-b7691eabb91d?auto=format&fit=crop&w=600&q=80" alt="Lachende kinderen">
+            <img src="https://images.unsplash.com/photo-1549921296-3b4a6dcaa8a4?auto=format&fit=crop&w=600&q=80" alt="Lasergame kids">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="Estafette race">
+            <img src="https://images.unsplash.com/photo-1620049622875-437f49b4d1e6?auto=format&fit=crop&w=600&q=80" alt="Kind met voetbal">
+            <img src="https://images.unsplash.com/photo-1623614206106-7dcdf799c55a?auto=format&fit=crop&w=600&q=80" alt="Feest met kids">
+            <img src="https://images.unsplash.com/photo-1581622554966-2b3ce95f79c3?auto=format&fit=crop&w=600&q=80" alt="Buiten spelende kinderen">
+            <img src="https://images.unsplash.com/photo-1584467735871-d1c3ebd7d3ce?auto=format&fit=crop&w=600&q=80" alt="Champions finale">
+            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=80" alt="Lopende kids">
+            <img src="https://images.unsplash.com/photo-1600061458758-fcc5283a3f52?auto=format&fit=crop&w=600&q=80" alt="Voetbal actie">
+            <img src="https://images.unsplash.com/photo-1583226391409-d2a72a98f0ea?auto=format&fit=crop&w=600&q=80" alt="Teamfoto kids">
         </div>
-
-        <!-- Jachtmomenten -->
-        <div class="category">
-            <h3>Jachtmomenten</h3>
-            <div class="gallery">
-                <img src="https://picsum.photos/id/1021/600/400" alt="Moment 1">
-                <img src="https://picsum.photos/id/1022/600/400" alt="Moment 2">
-                <img src="https://picsum.photos/id/1023/600/400" alt="Moment 3">
-            </div>
-        </div>
-
-        <!-- Groepsfoto's -->
-        <div class="category">
-            <h3>Groepsfoto's</h3>
-            <div class="gallery">
-                <img src="https://picsum.photos/id/1031/600/400" alt="Groep 1">
-                <img src="https://picsum.photos/id/1032/600/400" alt="Groep 2">
-                <img src="https://picsum.photos/id/1033/600/400" alt="Groep 3">
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="contact">
-        <h2>Meer weten of boeken?</h2>
-        <p>
-            Wil je het Superkids Jachtseizoen boeken voor jouw school, kinderfeest of evenement?
-            Neem contact met ons op via <strong>info@superkids.nl</strong> of bezoek onze hoofdpagina.
-        </p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Superkids. Alle rechten voorbehouden.</p>
+        <p>&copy; 2025 Superkids. Alle rechten voorbehouden. | info@superkids.nl</p>
     </footer>
 
 </body>
