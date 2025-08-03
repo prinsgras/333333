@@ -1,95 +1,47 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Greazy Diner</title>
-  <style>
-    body {
-      background-color: #5ed6e2;
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-    }
-
-    .checkerboard {
-      width: 100%;
-      height: 40px;
-      background: repeating-linear-gradient(
-        90deg,
-        black 0px,
-        black 40px,
-        white 40px,
-        white 80px
-      );
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 20px 0 10px;
-      background: linear-gradient(45deg, #ff69b4, #add8e6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    .address {
-      font-size: 1.2rem;
-      color: white;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    }
-
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      padding: 10px;
-    }
-
-    .video-wrapper {
-      width: 100%;
-      max-width: 320px;
-      aspect-ratio: 16/9;
-      background-color: black;
-      border: 3px solid white;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superkids Jachtseizoen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Superkids Jachtseizoen</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Over Superkids</a></li>
+                <li><a href="#">Jachtseizoen</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="checkerboard"></div>
+    <main>
+        <section class="hero">
+            <h2>Welkom bij het Jachtseizoen van Superkids</h2>
+            <p>Een spannend en actief spel voor iedereen! Daag jezelf uit in dit avontuurlijke achtervolgingsspel.</p>
+        </section>
 
-  <h1>Greazy</h1>
-  <div class="address">
-    Overtoom 344, 1054JG Amsterdam, Netherlands
-  </div>
+        <section class="details">
+            <h3>Wat is het Jachtseizoen?</h3>
+            <p>
+                Het Jachtseizoen van Superkids is gebaseerd op het populaire spel waarbij een team een voortvluchtige probeert te vangen binnen een bepaalde tijd.
+                Je krijgt een GPS-tracker en moet ontsnappen van de jagers die jou proberen op te sporen.
+            </p>
+        </section>
 
-  <div class="video-grid">
-    <!-- Verplaatste video (was nr. 9) -->
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kQKcTaP_2v2lzVwZuKFsSSW-hKNQDIM_/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
+        <section class="cta">
+            <h3>Doe mee!</h3>
+            <p>Durf jij het aan? Meld je nu aan voor het volgende Superkids Jachtseizoen!</p>
+            <a href="#" class="button">Aanmelden</a>
+        </section>
+    </main>
 
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1ktYhmCQGLQ7qlN8P4LxAZu77VbNEWWt2/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kv3XyVPTuPqzGNt9xKamKkQGI2ZEjSvq/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kmL7haVPpbS6FohgTkQEUrH_fUI4gWen/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kxYMqTkawx2qJS9b2hAjHVg4s1fKerat/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1l9EwhEKy9mlrQmweqIbf3v_XUBIanMYp/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lPCbZ6pWaEUn0VqyNHhI3_dmelnSEzlS/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1knS0TbisbJwCEa83NonyVlHxK-k3Qy_j/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kSrVuzTvK5kmgjB8gLM0QSq4r2YhVqpf/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1lR6wmqzKyvSK99snWa8lqQ6F66OUs6op/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kTMzX0u5cHPpsEXTFqY1KflvOnbPg8C2/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kiWJlDzZfFjz5RniJXZeCvZbkaEtgI5S/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-    <div class="video-wrapper"><iframe src="https://drive.google.com/file/d/1kaZclGJI176UruObdNt4gvFwNDssUH2g/preview" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div>
-  </div>
-
+    <footer>
+        <p>&copy; 2025 Superkids. Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 </html>
